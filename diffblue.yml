@@ -175,7 +175,52 @@ phases:
       cover-only: file
 units:
  - target:
+   - dir: inject/build/classes/java/main
+     file: io/micronaut/inject/configuration/ConfigurationMetadataBuilder.class
+     sourceDir: inject/src/main/java
+     sourceFile: io/micronaut/inject/configuration/ConfigurationMetadataBuilder.java
+   - dir: inject/build/classes/java/main
+     file: io/micronaut/inject/configuration/PropertyMetadata.class
+     sourceDir: inject/src/main/java
+     sourceFile: io/micronaut/inject/configuration/PropertyMetadata.java
+   - dir: inject/build/classes/java/main
+     file: io/micronaut/inject/configuration/ConfigurationMetadata.class
+     sourceDir: inject/src/main/java
+     sourceFile: io/micronaut/inject/configuration/ConfigurationMetadata.java
+ - target:
+   - dir: core/build/classes/java/main
+     file: io/micronaut/core/cli/CommandLineParser.class
+     sourceDir: core/src/main/java
+     sourceFile: io/micronaut/core/cli/CommandLineParser.java
+   - dir: core/build/classes/java/main
+     file: io/micronaut/core/cli/DefaultCommandLine.class
+     sourceDir: core/src/main/java
+     sourceFile: io/micronaut/core/cli/DefaultCommandLine.java
+   - dir: core/build/classes/java/main
+     file: io/micronaut/core/cli/CommandLine.class
+     sourceDir: core/src/main/java
+     sourceFile: io/micronaut/core/cli/CommandLine.java
+   - dir: core/build/classes/java/main
+     file: io/micronaut/core/cli/CommandLine$Builder.class
+     sourceDir: core/src/main/java
+     sourceFile: io/micronaut/core/cli/CommandLine.java
+ - target:
    - dir: cli/build/classes/groovy/main
      file: io/micronaut/cli/util/NameUtils.class
      sourceDir: cli/build/tmp/groovydoc
      sourceFile: io/micronaut/cli/util/NameUtils.java
+ - target:
+   - dir: cli/build/classes/groovy/main
+     file: io/micronaut/cli/io/support/AntPathMatcher.class
+     sourceDir: cli/build/tmp/groovydoc
+     sourceFile: io/micronaut/cli/io/support/AntPathMatcher.java
+ - target:
+   - dir: cli/build/classes/groovy/main
+     file: io/micronaut/cli/io/support/ResourceUtils.class
+     sourceDir: cli/build/tmp/groovydoc
+     sourceFile: io/micronaut/cli/io/support/ResourceUtils.java
+   - dir: cli/build/classes/groovy/main
+     file: io/micronaut/cli/io/support/Resource.class
+     sourceDir: cli/build/tmp/groovydoc
+     sourceFile: io/micronaut/cli/io/support/Resource.java
+
